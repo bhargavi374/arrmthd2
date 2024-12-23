@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>35.Hotel Room Rent Calculation
+        Calculate room rent based on room type (Standard, Deluxe, Suite) and number of days.</h3>
+    <script>
+        function hotelRoomRent() {
+            let room = prompt("enter the type of rrom required(standard,delux,suite):").toLowerCase();
+            let days = Number(prompt("enter number of days;"));
+            switch (room) {
+                case "standard":
+                    console.log(`the total amount is ${ 1000 * days }`);
+                    break;
+                case "delux":
+                    console.log(`the total amount is ${ 2000 * days }`);
+                    break;
+                case "delux":
+                    console.log(`the total amount is ${ 5000 * days }`);
+                    break;
+                default:
+                    console.log(`invalid input`);
+            }
+        }
+    </script>
+</body>
+
+</html>

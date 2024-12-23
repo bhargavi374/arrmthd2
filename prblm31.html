@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>31. University GPA Calculation
+        Calculate GPA based on the grades of courses taken.</h3>
+    <script>
+
+        function gpa() {
+            let num = Number(prompt("enter number of subjects:"));
+            let total = 0;
+            let credits = 0;
+            for (let i = 1; i <= num; i++) {
+                let grade = prompt(`enter the grade of subject${ i }:` ).toLowerCase();
+                let c = Number(prompt(`enter the credits for subject${ i }`));
+                credits += c;
+                total += marks(grade) * c;
+            }
+            console.log(`your gpa is ${((total) / (credits) / 10)}`);
+            }
+        function marks(g) {
+            if (g == 'o') {
+                return 100;
+            }
+            else if (g == 'a') {
+                return 90;
+            }
+            else if (g == 'b') {
+                return 80;
+            }
+            else if (g == 'c') {
+                return 70;
+            }
+            else if (g == 'd') {
+                return 60;
+            }
+            else if (g == 'f') {
+                return 0;
+            }
+        }</script>
+</body>
+
+</html>

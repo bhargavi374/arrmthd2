@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>33.Calculate Simple Interest
+        For a given principal, rate, and time, calculate the simple interest.</h3>
+    <script>
+
+        function simpleInterest() {
+            let principal = Number(prompt("enter the principal amount:"));
+            let rate = Number(prompt("enter the rate of interest:"));
+            let time = Number(prompt("enter the time:"));
+            console.log(`the simple interest is ${(principal * rate * time) / 100} and the amount after adding the interest is ${ ((principal * rate * time) / 100) + principal }`);
+}
+
+    </script>
+</body>
+
+</html>

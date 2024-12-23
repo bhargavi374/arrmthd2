@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>32.Food Court Bill Calculation
+        Calculate a bill with taxes and service charge.</h3>
+    <script>function foodCourtBill() {
+            let total = Number(prompt("enter the total amount:"));
+            console.log(`total - ${ total }`);
+            console.log(`tax - ${(18 / 100) * total}$`);
+        console.log(`service charges - 15$`);
+        console.log(`your total bill amount is: ${ total + ((18 / 100) * total) + 15}$`);
+            }
+    </script>
+</body>
+
+</html>

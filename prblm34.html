@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>
+        34.Library Late Fee
+        Given the number of overdue days, calculate the late fee for a library book.
+    </h3>
+    <script>
+
+
+        function lateFees() {
+            let lateDays = Number(prompt("enter number of late days:"));
+
+            if (lateDays >= 1 && lateDays <= 5) {
+                console.log(`the fine amount to pay is: ${ lateDays * 2}`);
+            }
+            else if (lateDays >= 6 && lateDays <= 10) {
+                console.log(`the fine amount to pay is: ${ lateDays * 3}`);
+            }
+            else if (lateDays > 10) {
+                console.log(`the fine amount to pay is: ${ lateDays * 5}`);
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
